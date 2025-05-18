@@ -6,6 +6,10 @@
 	background: #f7f9fc;
 }
 
+iframe {
+	display: none;
+}
+
 .form {
 	background: white;
 	padding: 2rem;
