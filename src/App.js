@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import "./App.css";
 
-const BACKEND_URL = "/subscribe";
-
 function App() {
 	const [email, setEmail] = useState("");
 	const [city, setCity] = useState("Kyiv");
@@ -15,7 +13,7 @@ function App() {
 		setMessage(null);
 		setLoading(true);
 		try {
-			const res = await fetch(`${BACKEND_URL}/subscribe`, {
+			const res = await fetch(`/subscribe`, {
 				method: "POST",
 				headers: { "Content-Type": "application/json" },
 				body: JSON.stringify({ email, city, frequency }),
