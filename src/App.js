@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
 
-const BACKEND_URL = "http://localhost:3001/api";
+const BACKEND_URL = "/api/subscribe";
 
 function App() {
 	const [email, setEmail] = useState("");
