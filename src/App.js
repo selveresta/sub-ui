@@ -13,7 +13,7 @@ function App() {
 		setMessage(null);
 		setLoading(true);
 		try {
-			const res = await fetch(`/subscribe`, {
+			const res = await fetch(`/api/subscribe`, {
 				method: "POST",
 				headers: { "Content-Type": "application/json" },
 				body: JSON.stringify({ email, city, frequency }),
